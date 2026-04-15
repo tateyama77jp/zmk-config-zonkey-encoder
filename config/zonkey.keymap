@@ -258,7 +258,7 @@
             >;
 
             sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&rot_kp LC_(Z) LC(LS(Z))>;
+                <&rot_kp LC(Z) LC(LS(Z))>;
         };
 
         layer_5 {

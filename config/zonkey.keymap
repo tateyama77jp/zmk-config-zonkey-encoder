@@ -177,12 +177,10 @@
             tapping-term-ms = <200>;
         };
 
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            tap-ms = <20>;
+        rot_kp: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -197,8 +195,7 @@
 &kp LCTRL       &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 2 SPACE  &lt 1 INT_MUHENKAN    &kp D  &kp BACKSPACE  &kp ENTER  &kp DEL
             >;
 
-            sensor-bindings =
-                <&scroll_up_down>,
+            sensor-bindings = <&rot_kp PG_UP PG_DN>,
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
@@ -216,8 +213,7 @@
 &mt LCTL ESC    &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER    &kp DEL
             >;
 
-            sensor-bindings =
-                <&scroll_up_down>,
+            sensor-bindings = <&rot_kp PG_UP PG_DN>,
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
@@ -236,8 +232,7 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER  &kp DEL
             >;
 
-            sensor-bindings =
-                <&scroll_up_down>,
+            sensor-bindings = <&rot_kp PG_UP PG_DN>,
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
@@ -249,8 +244,7 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER  &kp DEL
             >;
 
-            sensor-bindings =
-                <&scroll_up_down>,
+            sensor-bindings = <&rot_kp PG_UP PG_DN>,
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
@@ -263,8 +257,7 @@
 &kp LCTRL       &kp LEFT_WIN    &kp LEFT_ALT  &trans        &trans        &trans  &trans  &kp BACKSPACE  &kp ENTER        &kp DEL
             >;
 
-            sensor-bindings =
-                <&scroll_up_down>,
+            sensor-bindings = <&rot_kp PG_UP PG_DN>,
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
@@ -276,8 +269,7 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER  &kp DEL
             >;
 
-            sensor-bindings =
-                <&scroll_up_down>,
+            sensor-bindings = <&rot_kp PG_UP PG_DN>,
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
@@ -290,8 +282,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings =
-                <&scroll_up_down>,
+            sensor-bindings = <&rot_kp PG_UP PG_DN>,
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 

@@ -195,8 +195,8 @@
 &kp LCTRL       &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 2 SPACE  &lt 1 INT_MUHENKAN    &kp D  &kp BACKSPACE  &kp ENTER  &kp DEL
             >;
 
-            sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&rot_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&rot_kp PG_DN PG_UP>,
+                <&rot_kp C_VOL_UP C_VOL_DN>;
         };
 
         layer_1 {
@@ -213,8 +213,8 @@
 &mt LCTL ESC    &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER    &kp DEL
             >;
 
-            sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&rot_kp C_AC_UNDO C_AC_REDO>;
+            sensor-bindings = <&rot_kp PG_DN PG_UP>,
+                <&rot_kp C_AC_REDO C_AC_UNDO>;
         };
 
 
@@ -232,8 +232,8 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER  &kp DEL
             >;
 
-            sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&rot_kp C_BRI_DEC C_BRI_INC>;
+            sensor-bindings = <&rot_kp PG_DN PG_UP>,
+                <&rot_kp C_BRI_INC C_BRI_DEC>;
         };
 
         layer_3 {
@@ -244,8 +244,8 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER  &kp DEL
             >;
 
-            sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&rot_kp C_PREV C_NEXT>;
+            sensor-bindings = <&rot_kp PG_DN PG_UP>,
+                <&rot_kp C_NEXT C_PREV>;
         };
 
 
@@ -257,8 +257,8 @@
 &kp LCTRL       &kp LEFT_WIN    &kp LEFT_ALT  &trans        &trans        &trans  &trans  &kp BACKSPACE  &kp ENTER        &kp DEL
             >;
 
-            sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&rot_kp LC(Z) LC(LS(Z))>;
+            sensor-bindings = <&rot_kp PG_DN PG_UP>,
+                <&rot_kp  LC(LS(Z)) LC(Z)>;
         };
 
         layer_5 {
@@ -269,8 +269,8 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER  &kp DEL
             >;
 
-            sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&rot_kp LA(PG_UP) LA(PG_DN)>;
+            sensor-bindings = <&rot_kp PG_DN PG_UP>,
+                <&rot_kp LA(PG_DN) LA(PG_UP) >;
         };
 
 
@@ -282,8 +282,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&rot_kp LA(LEFT) LA(RIGHT)>;
+            sensor-bindings = <&rot_kp PG_DN PG_UP>,
+                <&rot_kp LA(RIGHT) LA(LEFT) >;
         };
 
     };

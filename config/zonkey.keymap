@@ -196,7 +196,7 @@
             >;
 
             sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+                <&rot_kp C_VOL_DN C_VOL_UP>;
         };
 
         layer_1 {
@@ -214,7 +214,7 @@
             >;
 
             sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+                <&rot_kp C_AC_UNDO C_AC_REDO>;
         };
 
 
@@ -233,7 +233,7 @@
             >;
 
             sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+                <&rot_kp C_BRI_DEC C_BRI_INC>;
         };
 
         layer_3 {
@@ -245,7 +245,7 @@
             >;
 
             sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+                <&rot_kp C_PREV C_NEXT>;
         };
 
 
@@ -258,7 +258,7 @@
             >;
 
             sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+                <&rot_kp LC_(Z) LC(LS(Z))>;
         };
 
         layer_5 {
@@ -270,7 +270,7 @@
             >;
 
             sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+                <&rot_kp LA(PG_UP) LA(PG_DN)>;
         };
 
 
@@ -283,7 +283,7 @@
             >;
 
             sensor-bindings = <&rot_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+                <&rot_kp LA(LEFT) LA(RIGHT)>;
         };
 
     };

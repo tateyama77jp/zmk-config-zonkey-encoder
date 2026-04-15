@@ -177,10 +177,12 @@
             tapping-term-ms = <200>;
         };
 
-        rot_kp: sensor_rotate_kp {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
         };
     };
 
@@ -195,8 +197,9 @@
 &kp LCTRL       &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 3 INT_HENKAN  &lt 2 SPACE  &lt 1 INT_MUHENKAN    &kp D  &kp BACKSPACE  &kp ENTER  &kp DEL
             >;
 
-            sensor-bindings = <&rot_kp PG_DN PG_UP>,
-                <&rot_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings =
+                <&scroll_up_down>,
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_1 {
@@ -213,10 +216,10 @@
 &mt LCTL ESC    &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER    &kp DEL
             >;
 
-            sensor-bindings = <&rot_kp PG_DN PG_UP>,
-                <&rot_kp K_REDO K_UNDO>;
+            sensor-bindings =
+                <&scroll_up_down>,
+                <&inc_dec_kp LG(LEFT) LG(RIGHT)>;
         };
-
 
         layer_2 {
             // -----------------------------------------------------------------------------------------
@@ -232,8 +235,9 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER  &kp DEL
             >;
 
-            sensor-bindings = <&rot_kp PG_DN PG_UP>,
-                <&rot_kp C_BRI_INC C_BRI_DEC>;
+            sensor-bindings =
+                <&scroll_up_down>,
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRI_DEC>;
         };
 
         layer_3 {
@@ -244,10 +248,10 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER  &kp DEL
             >;
 
-            sensor-bindings = <&rot_kp PG_DN PG_UP>,
-                <&rot_kp C_NEXT C_PREV>;
+            sensor-bindings =
+                <&scroll_up_down>,
+                <&inc_dec_kp LG(LA(RIGHT)) LG(LA(LEFT))>;
         };
-
 
         layer_4 {
             bindings = <
@@ -257,8 +261,7 @@
 &kp LCTRL       &kp LEFT_WIN    &kp LEFT_ALT  &trans        &trans        &trans  &trans  &kp BACKSPACE  &kp ENTER        &kp DEL
             >;
 
-            sensor-bindings = <&rot_kp PG_DN PG_UP>,
-                <&rot_kp  LC(LS(Z)) LC(Z)>;
+            sensor-bindings = <&scroll_up_down>, <&inc_dec_kp LG(LS(Z)) LG(Z)>;
         };
 
         layer_5 {
@@ -269,10 +272,8 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER  &kp DEL
             >;
 
-            sensor-bindings = <&rot_kp PG_DN PG_UP>,
-                <&rot_kp LA(PG_DN) LA(PG_UP) >;
+            sensor-bindings = <&scroll_up_down>, <&inc_dec_kp DOWN UP_ARROW>;
         };
-
 
         layer_6 {
             bindings = <
@@ -282,9 +283,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&rot_kp PG_DN PG_UP>,
-                <&rot_kp LA(RIGHT) LA(LEFT) >;
+            sensor-bindings = <&scroll_up_down>, <&inc_dec_kp RIGHT LEFT>;
         };
-
     };
 };

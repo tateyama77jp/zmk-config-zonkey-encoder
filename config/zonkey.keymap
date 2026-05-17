@@ -210,10 +210,10 @@
             // | CTRL| WIN | ALT |HENKAN|SPACE|MUHENKAN|         | BS | ENT |                   | DEL |
 
             bindings = <
-&kp CAPSLOCK    &kp GRAVE     &kp LA(LBKT)  &kp LA(RBKT)  &trans  &trans                         &trans         &trans       &moA     &moB  &moC
-&kp TAB         &trans        &trans        &trans        &trans  &trans  &kp LA(LEFT_BRACKET)   &kp JP_EISU    &trans       &trans   &moD  &moE  &kp ENTER
-&kp LEFT_SHIFT  &trans        &trans        &trans        &trans  &trans  &trans                 &trans         &kp JP_KANA  &moF     &moG  &moH  &kp ENTER
-&mt LCTL ESC    &kp LEFT_WIN  &kp LEFT_ALT  &trans        &trans  &trans  &kp LA(RIGHT_BRACKET)  &kp BACKSPACE  &kp ENTER    &kp DEL
+&kp CAPSLOCK    &kp GRAVE     &trans        &trans  &trans  &trans          &trans         &trans       &moA     &moB  &moC
+&kp TAB         &trans        &trans        &trans  &trans  &trans  &trans  &kp JP_EISU    &trans       &trans   &moD  &moE  &kp ENTER
+&kp LEFT_SHIFT  &trans        &trans        &trans  &trans  &trans  &trans  &trans         &kp JP_KANA  &moF     &moG  &moH  &kp ENTER
+&mt LCTL ESC    &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER    &kp DEL
             >;
 
             sensor-bindings =

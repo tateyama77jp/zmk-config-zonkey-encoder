@@ -177,6 +177,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <1000>;
             quick-tap-ms = <300>;
+　　　　　　　bindings = <&mo>, <&kp>;
         };
 
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {

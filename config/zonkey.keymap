@@ -227,7 +227,7 @@
             bindings = <
 &kp KP_ASTERISK   &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp KP_MINUS  &trans                 &kp TAB  &kp HOME    &mkp MB3        &kp END         &mo0
 &kp SINGLE_QUOTE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_PLUS   &trans         &trans  &trans   &kp ESCAPE  &mkp MB1        &kp UP_ARROW    &mkp MB2         &trans
-&none             &kp KP_SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL   &trans  &trans   &kp CLCK    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&none             &kp KP_SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp UNDER      &trans  &trans   &kp CLCK    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
 &none             &kp PERIOD    &kp NUMBER_0  &kp DELETE    &kp ENTER     &kp BACKSPACE  &trans  &to 0    &trans      &trans
             >;
 

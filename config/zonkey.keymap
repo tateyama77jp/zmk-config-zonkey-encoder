@@ -168,11 +168,11 @@
     };
 
     behaviors {
-   
         lt_repeat: lt_repeat {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_REPEAT";
             bindings = <&mo>, <&kp>;
+
             #binding-cells = <2>;
             flavor = "hold-preferred";  // 長押しを少し強めに優先
             tapping-term-ms = <1000>;    // 長押し判定（好みに応じて200〜300で調整）
@@ -195,7 +195,7 @@
             bindings = <
 &kp Q           &kp W             &kp E         &kp R                      &kp T        &kp C_VOLUME_UP                          &kp Y            &kp U        &kp I            &kp O      &kp P
 &kp A           &kp S             &kp D         &kp F                      &kp G        &kp LS(LG(NUMBER_4))  &kp C_PREV         &kp B            &kp H        &kp J            &kp K      &kp L    &kp SEMICOLON
-&kp LEFT_SHIFT  &kp Z             &kp X         &lt 6 C                    &lt 5 V      &lt 5 B               &kp C_VOLUME_DOWN  &kp MINUS        &kp N        &kp M            &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_SHIFT  &kp Z             &kp X         &lt 6 C                    &lt 5 V      &lt 3 B               &kp C_VOLUME_DOWN  &kp MINUS        &kp N        &kp M            &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL       &kp LEFT_COMMAND  &kp LEFT_ALT  &mt LEFT_SHIFT LANGUAGE_2  &lt 1 SPACE  &lt 4 LANGUAGE_1      &kp C_NEXT         &lt 1 BACKSPACE  &lt 2 ENTER  &kp RIGHT_SHIFT
             >;
 

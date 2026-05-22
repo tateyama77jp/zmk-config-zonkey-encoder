@@ -256,7 +256,7 @@
 
         layer_5 {
             bindings = <
-&trans          &trans        &trans        &trans  &trans  &trans          &trans         &trans     &trans   &trans  &trans
+&studio_unlock          &trans        &trans        &trans  &trans  &trans          &trans         &trans     &trans   &trans  &trans
 &trans          &trans        &trans        &trans  &trans  &trans  &trans  &trans         &trans     &trans   &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans        &trans        &trans  &trans  &trans  &trans  &trans         &trans     &trans   &trans  &trans  &trans
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp BACKSPACE  &kp ENTER  &kp DEL

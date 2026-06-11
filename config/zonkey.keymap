@@ -48,18 +48,16 @@
         };
     };
 
-    /* 外部ドライバー用のトラックボールリスナーをここに配置 */
-    trackball_listener {
+   trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
         input-processors = 
             <&zip_xy_transform>,
-            <&zip_automouse_layer 6>,
-            <&zip_scroll_groups 5>;
+            <&zip_automouse>,      /* _layer を取った単数形 */
+            <&zip_scroll_group>;    /* s を取った単数形 */
     };
-
-    /* ========== ここからモディファイア・モーフ群（ルートノード内に移動） ========== */
+    
     mo2: mo2 {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;

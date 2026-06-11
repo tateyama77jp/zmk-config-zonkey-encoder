@@ -2,15 +2,26 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: cormoran
+      url-base: https://github.com/cormoran
     - name: kureyakey
       url-base: https://github.com/kureyakey
-    - name: caksoylar  # <-- new entry
+    - name: caksoylar
       url-base: https://github.com/caksoylar  
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: v0.3
+      remote: cormoran          
+      revision: v0.3-branch+dya
       import: app/west.yml
+    - name: zmk-module-ble-management
+      remote: cormoran
+      revision: zmk-v0.3.0.0
+    - name: zmk-module-settings-rpc
+      remote: cormoran
+      revision: main
+    - name: zmk-module-runtime-input-processor
+      remote: cormoran
+      revision: zmk-v0.3.0.0
     - name: zmk-pmw3610-driver
       remote: kureyakey
       revision: main
@@ -18,4 +29,4 @@ manifest:
       remote: caksoylar
       revision: v0.3
   self:
-    path: config
+    path: zmk/app

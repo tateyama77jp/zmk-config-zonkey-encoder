@@ -3,15 +3,15 @@
 
 / {
     chosen {
-        zmk,physical-layout = &zonkey_physical_layout;
-        zmk,battery = &non_lipo_battery;
+        zmk,physical-layout = &physical_layout0;
     };
 
-    zonkey_physical_layout: zonkey_physical_layout {
+    physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
-        display-name = "Default";
-        transform = <&default_transform>;
+        display-name = "default_layout";
+
         kscan = <&kscan0>;
+        transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100   25    0       0     0     0>
@@ -115,6 +115,10 @@
     };
 
     right_encoder: encoder_right {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; 
+        steps = <24>;
         status = "disabled";
     };
 

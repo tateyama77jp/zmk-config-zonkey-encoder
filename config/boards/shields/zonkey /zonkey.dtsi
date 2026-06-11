@@ -3,15 +3,15 @@
 
 / {
     chosen {
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &zonkey_physical_layout;
+        zmk,battery = &non_lipo_battery;
     };
 
-    physical_layout0: physical_layout_0 {
+    zonkey_physical_layout: zonkey_physical_layout {
         compatible = "zmk,physical-layout";
-        display-name = "default_layout";
-
-        kscan = <&kscan0>;
+        display-name = "Default";
         transform = <&default_transform>;
+        kscan = <&kscan0>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100   25    0       0     0     0>
@@ -87,6 +87,25 @@
                 ;
     };
 
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+    };
+    
+    vbatt: vbatt {
+        // Disable default battery monitoring
+        status = "disabled";
+    };
+    non_lipo_battery: non_lipo_battery {
+        compatible = "zmk,non-lipo-battery";
+        io-channels = <&adc 0>;
+    };
+
+};
+
+&adc {
+    status = "okay";
+};
     left_encoder: encoder_left {
         compatible = "alps,ec11";
         a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;

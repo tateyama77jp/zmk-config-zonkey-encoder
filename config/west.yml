@@ -16,6 +16,10 @@ manifest:
     - name: zmk-module-ble-management
       remote: cormoran
       revision: zmk-v0.3.0.0
+    - name: zmk-behavior-runtime-sensor-rotate
+      remote: cormoran
+      revision: zmk-v0.3.0.0
+    # Required: Use ZMK with custom studio protocol support
     - name: zmk-module-settings-rpc
       remote: cormoran
       revision: main

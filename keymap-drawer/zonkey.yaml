@@ -6,7 +6,7 @@ layers:
   - E
   - R
   - T
-  - A
+  - PLAY PAUSE
   - Y
   - U
   - I
@@ -18,21 +18,21 @@ layers:
   - F
   - G
   - Sft+Gui+4
-  - B
-  - B
+  - PREV
+  - VOL UP
   - H
   - J
   - K
   - L
-  - ''''
+  - ;
   - LEFT SHIFT
   - Z
   - X
-  - {t: C, h: '6'}
+  - {t: C, h: auto_mouse}
   - {t: V, h: '5'}
   - {t: B, h: '4'}
-  - C
-  - '-'
+  - STOP
+  - VOLUME DOWN
   - N
   - M
   - ','
@@ -41,14 +41,158 @@ layers:
   - LCTRL
   - LEFT COMMAND
   - LEFT ALT
-  - {t: INT HENKAN, h: '3'}
-  - {t: SPACE, h: '2'}
-  - {t: INT5, h: '1'}
-  - D
+  - {t: LANGUAGE 2, h: LEFT SHIFT}
+  - {t: SPACE, h: sym}
+  - {t: LANG1, h: func}
+  - NEXT
+  - {t: BACKSPACE, h: sym}
+  - {t: ENTER, h: num}
+  - RIGHT SHIFT
+  sym:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PRINTSCREEN
+  - ''
+  - PAGE UP
+  - ''
+  - F11
+  - {t: ▽, type: trans}
+  - INTERNATIONAL 1
+  - ''
+  - ''''
+  - '`'
+  - INTERNATIONAL 3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - SCROLLLOCK
+  - PAUSE BREAK
+  - PAGE DOWN
+  - ''
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: num, h: toggle}
+  - {t: default, h: toggle}
+  - RIGHT SHIFT
+  num:
+  - KP ASTERISK
+  - '7'
+  - '8'
+  - '9'
+  - KP MINUS
+  - {t: ▽, type: trans}
+  - TAB
+  - HOME
+  - '&mkp MB3'
+  - END
   - BACKSPACE
+  - ''''
+  - '4'
+  - '5'
+  - '6'
+  - KP PLUS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ESCAPE
+  - '&mkp MB1'
+  - UP ARROW
+  - '&mkp MB2'
+  - DELETE
+  - ''
+  - KP SLASH
+  - '1'
+  - '2'
+  - '3'
+  - _
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - CLCK
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - F4
+  - KP NUMLOCK
+  - .
+  - '0'
+  - DELETE
   - ENTER
-  - DEL
-  '1':
+  - BACKSPACE
+  - {t: ▽, type: trans}
+  - {t: default, h: toggle}
+  - {type: held}
+  - {t: ▽, type: trans}
+  func:
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - VOLUME UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - BT PRV
+  - BT NXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - VOLUME DOWN
+  - REWIND
+  - PLAY PAUSE
+  - FAST FORWARD
+  - ''
+  - LEFT SHIFT
+  - {t: BT DISC, h: '0'}
+  - {t: BT DISC, h: '1'}
+  - {t: BT DISC, h: '2'}
+  - {t: BT DISC, h: '3'}
+  - {t: BT DISC, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - MUTE
+  - PREV
+  - STOP
+  - NEXT
+  - ''
+  - LCTRL
+  - LEFT WIN
+  - LEFT ALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: num, h: toggle}
+  - {t: default, h: toggle}
+  - {t: ▽, type: trans}
+  '4':
   - CAPSLOCK
   - '`'
   - {t: ▽, type: trans}
@@ -78,7 +222,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LANGUAGE 1
@@ -91,157 +235,13 @@ layers:
   - LEFT ALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - BACKSPACE
-  - ENTER
-  - DEL
-  '2':
-  - '1'
-  - {t: '2', s: '@'}
-  - '3'
-  - '4'
-  - '5'
-  - {t: ▽, type: trans}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: Sft+9}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - UP ARROW
-  - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
-  - LCTRL
-  - LEFT WIN
-  - LEFT ALT
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BACKSPACE
-  - ENTER
-  - DEL
-  '3':
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - {t: ▽, type: trans}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LCTRL
-  - LEFT WIN
-  - LEFT ALT
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BACKSPACE
-  - ENTER
-  - DEL
-  '4':
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - '-'
-  - KP 7
-  - KP 8
-  - KP 9
-  - +
-  - BT CLR
-  - BT CLR ALL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - /
-  - KP 4
-  - KP 5
-  - KP 6
-  - '*'
-  - LEFT SHIFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - .
-  - KP 0
-  - KP 1
-  - KP 2
-  - KP 3
-  - '='
-  - LCTRL
-  - LEFT WIN
-  - LEFT ALT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BACKSPACE
   - ENTER
   - DEL
   '5':
-  - '&studio_unlock'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -288,7 +288,7 @@ layers:
   - BACKSPACE
   - ENTER
   - DEL
-  '6':
+  auto_mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
